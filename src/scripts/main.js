@@ -6,7 +6,7 @@ const removeRowBtn = document.querySelector('.remove-row');
 const appendColBtn = document.querySelector('.append-column');
 const removeColBtn = document.querySelector('.remove-column');
 
-const table = document.querySelector('.field ');
+const table = document.querySelector('.field');
 
 function updateBtn() {
   const rowCount = table.rows.length;
@@ -15,7 +15,7 @@ function updateBtn() {
   appendRowBtn.disabled = rowCount >= 10;
   removeRowBtn.disabled = rowCount <= 2;
   appendColBtn.disabled = colCount >= 10;
-  removeColBtn.disabled = rowCount <= 2;
+  removeColBtn.disabled = colCount <= 2;
 }
 
 appendRowBtn.addEventListener('click', () => {
